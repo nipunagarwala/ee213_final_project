@@ -1,0 +1,25 @@
+\o Program:		@(#)$CDS: libManager version 31.09 01/04/2011 12:51 (cat91amd) $
+\o Sub version:		sub-version  s007 
+\o Arguments:		-unmapped -mpssession virtuoso28093 -mpshost corn11.stanford.edu 
+\o Working Directory:	corn11.stanford.edu:/afs/ir.stanford.edu/class/ee313/ta_stuff/winter15/project/schem
+\o 64-bit offsets
+\o Qt version: 		4.4.1
+\o changeWorkingDir("/afs/ir.stanford.edu/class/ee313/ta_stuff/winter15/project/schem") unnecessary.
+\o ddSetForcedLib("") unnecessary.
+\o Log file is "/afs/ir.stanford.edu/class/ee313/ta_stuff/winter15/project/schem/libManager.log".
+\o Opening libManager window.
+\a nrSetWindowVisibility(cdsLibManager "show")
+\o MPS service: map window
+\a nrSetCurrentWindow(cdsLibManager)
+\o Library Manager customization server connected.
+\a nrResizeWindow(cdsLibManager list(514 48 600 427))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "US_8ths"
+\a cdsLibManager->libListBox->value = "analogLib"
+\a cdsLibManager->libListBox->value = "functional"
+\a cdsLibManager->libListBox->value = "rfExamples"
+\a cdsLibManager->libListBox->value = "rfLib"
+\a cdsLibManager->libLineEdit->value = "rfLib"
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\o libManager is exiting.
+\a exit(0)
