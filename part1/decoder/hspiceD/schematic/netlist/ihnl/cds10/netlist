@@ -1,0 +1,10 @@
+xu6 net020 net019 net14 nand_pcell_5
+xu7 vdd! predec_255 net11 nand_pcell_5
+xu8 0 predec_255 net8 nand_pcell_5
+xu0 vdd! predec net17 nand_pcell_5
+xu5 net17 wl0 inv_pcell_6
+xu10 net14 net26 inv_pcell_6
+xu11 net11 wl255 inv_pcell_6
+xu12 net8 net22 inv_pcell_6
+.ends decode_stage
+** End of subcircuit definition.

@@ -1,0 +1,6 @@
+m2 y b vdd! vdd! pmos L=2 W=pw_nand2 M=1
+m0 y a vdd! vdd! pmos L=2 W=pw_nand2 M=1
+m3 mid_a b 0 0 nmos L=2 W=nw_nand2 M=1
+m1 y a mid_a 0 nmos L=2 W=nw_nand2 M=1
+.ends nand_pcell_2
+** End of subcircuit definition.

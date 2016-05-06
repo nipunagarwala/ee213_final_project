@@ -1,0 +1,5 @@
+
+** Library name: ee213_project_lib
+** Cell name: nand3
+** View name: schematic
+.subckt nand3 a b c y

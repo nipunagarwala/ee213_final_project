@@ -1,0 +1,11 @@
+"ee313.inv.schematic.pw_pw_inv5__pl_2__pm_1__pnf___nmodel_nmos__nw_nw_inv5__nl_2__nm_1__nnf___pmodel_pmos.termorder" nil
+"ee313.inv.schematic.pw_pw_inv3__pl_2__pm_1__pnf___nmodel_nmos__nw_nw_inv3__nl_2__nm_1__nnf___pmodel_pmos.termorder" nil
+"ee213_project_lib.predecode_416.schematic.termorder" nil
+"ee213_project_lib.nand3.schematic.termorder" nil
+"ee313.nand.schematic.pmodel_pmos__pw_pw_nand2__pl_2__pm_1__pnf___nmodel_nmos__nw_nw_nand2__nl_2__nm_1__nnf___ninputs_2.termorder" nil
+"ee213_project_lib.decode_stage.schematic.termorder" (("WL0" "WL255" "predec" "predec_255") ("WL0" "WL255" "predec" "predec_255"))
+"ee313.nand.schematic.pmodel_pmos__pw_pw_nand3__pl_2__pm_1__pnf___nmodel_nmos__nw_nw_nand3__nl_2__nm_1__nnf___ninputs_2.termorder" nil
+"ee213_project_lib.predecode_24.schematic.termorder" (("Address0" "Address255" "ck" "inv1" "inv1_255") ("Address0" "Address255" "ck" "inv1" "inv1_255"))
+"ee313.inv.schematic.pw_pw_inv2__pl_2__pm_1__pnf___nmodel_nmos__nw_nw_inv2__nl_2__nm_1__nnf___pmodel_pmos.termorder" nil
+"ee313.inv.schematic.pw_pw_inv1__pl_2__pm_1__pnf___nmodel_nmos__nw_nw_inv1__nl_2__nm_1__nnf___pmodel_pmos.termorder" nil
+"ee313.inv.schematic.pw_pw_inv4__pl_2__pm_1__pnf___nmodel_nmos__nw_nw_inv4__nl_2__nm_1__nnf___pmodel_pmos.termorder" nil

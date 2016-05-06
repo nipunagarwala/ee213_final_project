@@ -1,0 +1,5 @@
+
+** Library name: ee213_project_lib
+** Cell name: predecode_24
+** View name: schematic
+.subckt predecode_24 address0 address255 ck inv1 inv1_255

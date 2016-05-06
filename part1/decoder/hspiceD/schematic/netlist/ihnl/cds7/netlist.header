@@ -1,0 +1,5 @@
+
+** Library name: ee213_project_lib
+** Cell name: predecode_416
+** View name: schematic
+.subckt predecode_416 inv1 inv1_255 predec predec_255

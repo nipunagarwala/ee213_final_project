@@ -1,0 +1,14 @@
+CADENCE IHNL010712
+
+ee213_project_lib nand3 schematic cds0
+ee313 inv_pcell_0 schematic cds1
+ee213_project_lib predecode_24 schematic cds2
+ee313 inv_pcell_1 schematic cds3
+ee313 nand_pcell_2 schematic cds4
+ee313 inv_pcell_3 schematic cds5
+ee313 inv_pcell_4 schematic cds6
+ee213_project_lib predecode_416 schematic cds7
+ee313 nand_pcell_5 schematic cds8
+ee313 inv_pcell_6 schematic cds9
+ee213_project_lib decode_stage schematic cds10
+part1 decoder schematic cds11

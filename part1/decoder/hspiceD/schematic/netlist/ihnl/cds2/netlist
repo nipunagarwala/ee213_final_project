@@ -1,0 +1,10 @@
+xi44 ck 0 address0 net22 nand3 nl=2 nw=nw_nand1 pl=2 pw=pw_nand1
+xi45 ck vdd! address255 nand1_1 nand3 nl=2 nw=nw_nand1 pl=2 pw=pw_nand1
+xi46 ck 0 address255 net14 nand3 nl=2 nw=nw_nand1 pl=2 pw=pw_nand1
+xi40 ck vdd! address0 nand1 nand3 nl=2 nw=nw_nand1 pl=2 pw=pw_nand1
+xu4 net22 net10 inv_pcell_0
+xu5 nand1_1 inv1_255 inv_pcell_0
+xu6 net14 net6 inv_pcell_0
+xu0 nand1 inv1 inv_pcell_0
+.ends predecode_24
+** End of subcircuit definition.

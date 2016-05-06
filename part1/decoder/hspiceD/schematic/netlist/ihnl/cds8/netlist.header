@@ -1,0 +1,5 @@
+
+** Library name: ee313
+** Cell name: nand
+** View name: schematic
+.subckt nand_pcell_5 a b y

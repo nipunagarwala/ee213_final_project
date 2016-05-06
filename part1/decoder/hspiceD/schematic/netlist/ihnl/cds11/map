@@ -1,0 +1,25 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  repList "hspiceD spice cmos_sch cmos.sch schematic"
+  stopList "hspiceD spice"
+  hierDelim "^"
+ )
+( net
+ )
+( inst
+( "I9" "xi9" )
+( "I13" "xi13" )
+( "I4" "xi4" )
+ )
+( model
+( "decode_stage" "decode_stage" )
+( "predecode_24" "predecode_24" )
+( "decoder" "decoder" )
+( "predecode_416" "predecode_416" )
+ )
+( term
+ )
+( param
+ )
+ )

@@ -59,3 +59,35 @@ c_nand1 = c_inv1*LE_nand3/f
 
 % Sideload
 load_pdec = height*num_cells_height*lambda*Cw
+
+% Resizing all the Gates based on side load
+pdec_out = (load_pdec + c_nand3)*b3;
+B_pdec = b1*b2;
+H_pdec = pdec_out/Cin;
+G_pdec = LE_nand3*LE_nand2;
+F_pdec = G*B*H
+n_pdec = 6;
+f_pdec = (G*B*H)^(1/n_pdec);
+pdec_stages = log(F_pdec)/log(4)
+
+% Finding the resized Gates before side load
+pdec_inv4 = pdec_out*b3/f_pdec
+pdec_inv3 = pdec_inv4/f_pdec
+pdec_inv2 = pdec_inv3/f_pdec
+pdec_nand2 = pdec_inv2*LE_nand2/f_pdec
+pdec_inv1 = pdec_nand2*b2/f_pdec
+pdec_nand1 = pdec_inv1*LE_nand3/f_pdec
+
+% Finding the re-sized gates after the side load
+dec_in = pdec_inv4
+G_dec = LE_nand3;
+B_dec = b3;
+F_dec = G*B*Cout/dec_in
+n_dec = 2;
+f_dec = (F_dec)^(1/2)
+dec_stages = log(F_dec)/log(4)
+
+dec_inv5 = Cout/f_dec
+dec_nand3 = dec_inv5*LE_nand2/f_dec
+dec_inv4 = dec_nand3*b3/f_dec
+

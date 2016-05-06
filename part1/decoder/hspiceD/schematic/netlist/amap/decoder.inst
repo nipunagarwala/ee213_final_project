@@ -1,0 +1,8 @@
+HEADER
+"PSFversion" "1.00"
+"I4v" "xi4v"
+"I9v" "xi9v"
+"I4n" "predecode_24"
+"I13v" "xi13v"
+"I9n" "predecode_416"
+"I13n" "decode_stage"
