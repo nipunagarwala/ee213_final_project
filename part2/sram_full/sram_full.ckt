@@ -1,0 +1,83 @@
+// Generated for: spectre
+// Generated on: May 12 21:37:16 2016
+// Design library name: part2
+// Design cell name: sram_full
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
+
+// Library name: ee313
+// Cell name: inv
+// View name: schematic
+subckt inv_pcell_0 A Y
+    M1 (Y A vdd! vdd!) pmos w=8 l=2
+    M2 (Y A 0 0) nmos w=4 l=2
+ends inv_pcell_0
+// End of subcircuit definition.
+
+// Library name: ee313
+// Cell name: inv
+// View name: schematic
+subckt inv_pcell_1 A Y
+    M1 (Y A vdd! vdd!) pmos w=12 l=2
+    M2 (Y A 0 0) nmos w=24 l=2
+ends inv_pcell_1
+// End of subcircuit definition.
+
+// Library name: project
+// Cell name: write
+// View name: schematic
+subckt write bl0 bl_b0 blpc_b wrdata wren0 inh_bulk_n inh_bulk_p
+    M5 (bl0 blpc_b vdd! inh_bulk_p) pmos w=80 l=2
+    M1 (bl0 blpc_b bl_b0 inh_bulk_p) pmos w=80 l=2
+    M0 (bl_b0 blpc_b vdd! inh_bulk_p) pmos w=80 l=2
+    M4 (net23 wren0 bl_b0 inh_bulk_n) nmos w=90 l=2
+    M3 (net26 wren0 bl0 inh_bulk_n) nmos w=90 l=2
+    U0 (wrdata net18) inv_pcell_0
+    U2 (wrdata net23) inv_pcell_1
+    U1 (net18 net26) inv_pcell_1
+ends write
+// End of subcircuit definition.
+
+// Library name: project
+// Cell name: mc
+// View name: schematic
+subckt mc bl bl_b wl vdd vss inh_bulk_n inh_bulk_p
+    M5 (bit bit_b vss inh_bulk_n) nmos w=6 l=2
+    M4 (bit_b bit vss inh_bulk_n) nmos w=6 l=2
+    M1 (bl_b wl bit_b inh_bulk_n) nmos w=4 l=2
+    M0 (bl wl bit inh_bulk_n) nmos w=4 l=2
+    M2 (bit_b bit vdd inh_bulk_p) pmos w=4 l=2
+    M3 (bit bit_b vdd inh_bulk_p) pmos w=4 l=2
+    C2 (bl 0) capacitor c=70.000a
+    C1 (bl_b 0) capacitor c=70.000a
+    C0 (wl 0) capacitor c=246.00a
+ends mc
+// End of subcircuit definition.
+
+// Library name: part2
+// Cell name: sram_full
+// View name: schematic
+I3 (bl63 bl_b63 blpc_b wrdata255 wren0 0 vdd!) write m=1
+I2 (net12 net19 blpc_b vdd! wren0 0 vdd!) write m=254
+I1 (bl0 bl_b0 blpc_b wrdata0 wren0 0 vdd!) write m=1
+I15 (bl63 bl_b63 net10 vdd! gnd 0 vdd!) mc m=254
+I14 (net12 net19 net10 vdd! gnd 0 vdd!) mc m=64516
+I13 (bl0 bl_b0 net10 vdd! gnd 0 vdd!) mc m=254
+I12 (bl63 bl_b63 wl255 vdd! gnd 0 vdd!) mc m=1
+I11 (net12 net19 wl255 vdd! gnd 0 vdd!) mc m=254
+I10 (bl0 bl_b0 wl255 vdd! gnd 0 vdd!) mc m=1
+I6 (bl63 bl_b63 wl0 vdd! gnd 0 vdd!) mc m=1
+I5 (net12 net19 wl0 vdd! gnd 0 vdd!) mc m=254
+I4 (bl0 bl_b0 wl0 vdd! gnd 0 vdd!) mc m=1
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts  where=rawfile
+saveOptions options save=allpub
