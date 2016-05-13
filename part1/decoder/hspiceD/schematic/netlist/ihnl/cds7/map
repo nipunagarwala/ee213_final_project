@@ -28,11 +28,6 @@
 ( "U30" "xu30" )
  )
 ( model
-( "inv_pcell_3" "inv_pcell_3" )
-( "inv_pcell_1" "inv_pcell_1" )
-( "nand_pcell_2" "nand_pcell_2" )
-( "inv_pcell_4" "inv_pcell_4" )
-( "predecode_416" "predecode_416" )
  )
 ( term
  )

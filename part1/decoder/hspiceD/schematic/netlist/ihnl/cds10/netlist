@@ -1,4 +1,4 @@
-xu6 net020 net019 net14 nand_pcell_5
+xu6 0 predec net14 nand_pcell_5
 xu7 vdd! predec_255 net11 nand_pcell_5
 xu8 0 predec_255 net8 nand_pcell_5
 xu0 vdd! predec net17 nand_pcell_5

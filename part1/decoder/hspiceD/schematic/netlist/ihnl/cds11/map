@@ -13,10 +13,6 @@
 ( "I4" "xi4" )
  )
 ( model
-( "decode_stage" "decode_stage" )
-( "predecode_24" "predecode_24" )
-( "decoder" "decoder" )
-( "predecode_416" "predecode_416" )
  )
 ( term
  )

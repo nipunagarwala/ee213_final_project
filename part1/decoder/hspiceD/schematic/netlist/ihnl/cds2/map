@@ -22,9 +22,6 @@
 ( "U4" "xu4" )
  )
 ( model
-( "inv_pcell_0" "inv_pcell_0" )
-( "nand3" "nand3" )
-( "predecode_24" "predecode_24" )
  )
 ( term
  )

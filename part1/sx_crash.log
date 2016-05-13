@@ -1,0 +1,128 @@
+### CustomExplorer log file, revision F-2011.09-SP2 (build 0205) ###
+### created at 17:05:06 on Fri May  6 2016 (Linux AMD64) ###
+wv_start_log
+# (0) running in waveview only mode
+# (0) SW_SX_PERL_LIB defined
+# (0) SW_SX_TCL_LIB defined
+# (0) HOME defined
+wv_move_window CustomWaveView 0 0
+wv_resize_window CustomWaveView 800 400
+wv_move_window CustomWaveView 0 23
+wv_move_window CustomWaveView 101 20
+wv_resize_window CustomWaveView 1009 600
+wv_select_menu_item {File} {Import Waveform File ...}
+wv_move_dialog FileDialog 424 64
+wv_select_dialog FileDialog
+wv_set_text FileDialog.FileName {}
+wv_close_dialog FileDialog
+wv_select_menu_item {File} {Import Waveform File ...}
+### auto-generated spxrc ###
+### General Settings ###
+gui_font small
+startup_mode viewer
+show_console false
+replay_delay 1
+backingstore internal
+gui_color bright
+sx_editor vi
+private_colormap false
+wv_iconizable false
+user_colors false
+thick_line false
+okbtn_autocenter false
+delete_confirm true
+reload_confirm true
+archive_data_on_crash false
+precision_digits 3
+unit_scale 0
+browser_width 250
+### SPICE lint ###
+spice_netlist_erc off
+spice_inst_casesensitive false
+spice_parm_casesensitive false
+spice_sort_subckt_cells false
+spice_cell_index_depth true
+spice_smart_sort false
+use_hspiceini false
+lint_suppress_list 
+lint_min_resistance    1.000E-05
+lint_max_capacitance    1.000E-03
+lint_min_mos_width    1.000E-08
+lint_max_mos_width    1.000E-02
+lint_min_mos_length    1.000E-08
+lint_max_mos_length    1.000E-02
+### Custom WaveView ###
+waveview_background black
+cycle_color_by panel+waveview
+clamp_ac_phase true
+left_button_action zoom
+init_xy_mode hvsel
+cds_link_plot_mode replace
+group_display_order file
+def_ac_stack complex
+def_acx_type linear
+def_acy_type linear
+def_trx_type linear
+def_try_type linear
+def_fft_xscale log
+def_fft_yscale db
+signal_dnd_mode move
+logic_style_default vcd
+signal_font normal
+signal_name name+file
+signame_align left
+signal_path path+name
+load_data_at_open false
+grid_default on
+grid_brightness normal
+auto_y_axes off
+auto_y_width off
+alias_bracket true
+flatten_single_point_sweep true
+signame_popup false
+show_ytype false
+smart_hsort false
+sweep_expand user
+remove_dupsig false
+case_sens_tr0 false
+flatten_segs true
+extend_waveform false
+convert_s_to_yz true
+sync_alias true
+real_time_scroll true
+snap_marker false
+btn_add_hcursor false
+bar_grip_scroll false
+auto_x_extend false
+hide_panel_div false
+logic_cursor_snap true
+logic_glitch_highlight true
+stack_auto_fit on
+wdf_filter allfiles
+horz_panel_height 80
+default_panels_perrow 4
+default_hist_binsize 10
+max_visible_panels 0
+lines_per_panel 0
+min_panel_height 20
+analog_panel_height 120
+max_log_span 12
+logic_panel_height 24
+panel_spacing 0
+smith_char_impedance    5.000E+01
+d2a_xtol true
+d2a_fullext true
+d2a_high_value    3.300E+00
+d2a_low_value    0.000E+00
+d2a_rise_slew    1.000E-11
+d2a_fall_slew    1.000E-11
+a2d_single_threshold true
+a2d_center_threshold    2.500E+00
+a2d_high_threshold    4.000E+00
+a2d_low_threshold    1.000E+00
+dm_low_margin 10.0
+dm_high_margin 90.0
+dm_low_logic 0.0
+dm_high_logic 3.3
+SX_DM_DMScale false
+SNR_inc_floor_noise false

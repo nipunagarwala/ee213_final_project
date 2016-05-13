@@ -22,9 +22,6 @@
 ( "U10" "xu10" )
  )
 ( model
-( "decode_stage" "decode_stage" )
-( "inv_pcell_6" "inv_pcell_6" )
-( "nand_pcell_5" "nand_pcell_5" )
  )
 ( term
  )

@@ -25,9 +25,9 @@ b2 = 4;
 b3 = 16;
 
 % Calculating Logical Effort
-nand2_wid = ((Vdd - Vth) + 2*EcL)/((Vdd - Vth) + EcL);
+nand2_wid = ((Vdd - Vth) + 2*EcL)/((Vdd - Vth) + EcL)
 LE_nand2 = (nand2_wid + 2)/3
-nand3_wid = ((Vdd - Vth) + 3*EcL)/((Vdd - Vth) + EcL);
+nand3_wid = ((Vdd - Vth) + 3*EcL)/((Vdd - Vth) + EcL)
 LE_nand3 = (nand3_wid + 2)/3
 
 % Calculating total LE
@@ -61,17 +61,17 @@ c_nand1 = c_inv1*LE_nand3/f
 load_pdec = height*num_cells_height*lambda*Cw
 
 % Resizing all the Gates based on side load
-pdec_out = (load_pdec + c_nand3)*b3;
+pdec_out = c_nand3*b3 + load_pdec
 B_pdec = b1*b2;
 H_pdec = pdec_out/Cin;
 G_pdec = LE_nand3*LE_nand2;
-F_pdec = G*B*H
+F_pdec = G_pdec*B_pdec*H_pdec
 n_pdec = 6;
-f_pdec = (G*B*H)^(1/n_pdec);
+f_pdec = (F_pdec)^(1/n_pdec)
 pdec_stages = log(F_pdec)/log(4)
 
 % Finding the resized Gates before side load
-pdec_inv4 = pdec_out*b3/f_pdec
+pdec_inv4 = pdec_out/f_pdec
 pdec_inv3 = pdec_inv4/f_pdec
 pdec_inv2 = pdec_inv3/f_pdec
 pdec_nand2 = pdec_inv2*LE_nand2/f_pdec
@@ -80,14 +80,32 @@ pdec_nand1 = pdec_inv1*LE_nand3/f_pdec
 
 % Finding the re-sized gates after the side load
 dec_in = pdec_inv4
-G_dec = LE_nand3;
+G_dec = LE_nand2;
 B_dec = b3;
-F_dec = G*B*Cout/dec_in
+F_dec = G_dec*B_dec*Cout/dec_in
 n_dec = 2;
-f_dec = (F_dec)^(1/2)
+f_dec = (F_dec)^(1/3)
 dec_stages = log(F_dec)/log(4)
 
 dec_inv5 = Cout/f_dec
 dec_nand3 = dec_inv5*LE_nand2/f_dec
 dec_inv4 = dec_nand3*b3/f_dec
+
+%PMOS and NMOS Sizing
+n_inv5 = 1/3*dec_inv5/(lambda*Cg)
+p_inv5 = 2/3*dec_inv5/(lambda*Cg)
+n_nand3 = nand2_wid/(nand2_wid + 2)*dec_nand3/(lambda*Cg)
+p_nand3 = 2/(nand2_wid + 2)*dec_nand3/(lambda*Cg)
+n_inv4 = 1/3*dec_inv4/(lambda*Cg)
+p_inv4 = 2/3*dec_inv4/(lambda*Cg)
+n_inv3 = 1/3*pdec_inv3/(lambda*Cg)
+p_inv3 = 2/3*pdec_inv3/(lambda*Cg)
+n_inv2 = 1/3*pdec_inv2/(lambda*Cg)
+p_inv2 = 2/3*pdec_inv2/(lambda*Cg)
+n_nand2 = nand2_wid/(nand2_wid + 2)*pdec_nand2/(lambda*Cg)
+p_nand2 = 2/(nand2_wid + 2)*pdec_nand2/(lambda*Cg)
+n_inv1 = 1/3*pdec_inv1/(lambda*Cg)
+p_inv1 = 2/3*pdec_inv1/(lambda*Cg)
+n_nand1 = nand3_wid/(nand3_wid + 2)*pdec_nand1/(lambda*Cg)
+p_nand1 = 2/(nand3_wid + 2)*pdec_nand1/(lambda*Cg)
 

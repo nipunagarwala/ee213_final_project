@@ -1,0 +1,103 @@
+* "simulator" "HSPICE" 
+* "version" "I-2013.12-SP2 64-BIT"
+* "format" "HSP"
+* "rundate" "17:03:31 05/06/2016 "
+* "netlist" "stimulus.sp "
+* "runtitle" "* file: stimulus.sp"
+* time =  1.500e-09       
+* temperature =  2.500e+01       
+*** BEGIN: Saved Operating Point ***                     
+*.option
+*+ gmindc = 1.000e-12      
+.nodeset
++ a0 = 1.503e-02       
++ a255 = 9.888e-01       
++ add0 = 2.396e-01       
++ add255 = 2.396e-01       
++ clk = 1.807e-05       
++ net027 = 2.854e-01       
++ net028 = 2.790e-01       
++ vdd = 1.000e+00       
++ vdd! = 1.000e+00       
++ wire_inv1 = 1.407e-05       
++ wire_inv255 = 1.407e-05       
++ wl1_out = 2.103e-05       
++ wl255_out = 2.001e-05       
++ xi4^nand1 = 1.000e-00       
++ xi4^nand1_1 = 1.000e-00       
++ xi4^net10 = 1.413e-05       
++ xi4^net14 = 1.000e-00       
++ xi4^net22 = 1.000e-00       
++ xi4^net6 = 1.413e-05       
++ xi9^net024 = 1.415e-05       
++ xi9^net028 = 1.415e-05       
++ xi9^net032 = 1.833e-05       
++ xi9^net036 = 1.732e-05       
++ xi9^net043 = 1.000e-00       
++ xi9^net046 = 1.000e-00       
++ xi9^net049 = 1.000e-00       
++ xi9^net052 = 1.000e-00       
++ xi9^net057 = 9.849e-01       
++ xi9^net55 = 1.000e-00       
++ xi9^net63 = 1.000e-00       
++ xi9^net69 = 1.146e-05       
++ xi9^net73 = 1.146e-05       
++ xi9^net77 = 9.828e-01       
++ xi13^net019 = 2.733e-01       
++ xi13^net020 = 6.928e-01       
++ xi13^net11 = 9.849e-01       
++ xi13^net14 = 9.912e-01       
++ xi13^net17 = 9.828e-01       
++ xi13^net22 = 1.415e-05       
++ xi13^net26 = 1.726e-05       
++ xi13^net8 = 1.000e-00       
++ xclk_gen^src = 0.000e+00       
++ xa0_gen^src = 0.000e+00       
++ xa255_gen^src = 1.000e+00       
++ xi4^xi44^net5 = 5.598e-01       
++ xi4^xi44^net9 =-2.024e-05       
++ xi4^xi45^net5 = 1.375e-01       
++ xi4^xi45^net9 = 1.371e-01       
++ xi4^xi46^net5 = 5.598e-01       
++ xi4^xi46^net9 =-2.024e-05       
++ xi4^xi40^net5 = 1.375e-01       
++ xi4^xi40^net9 = 1.371e-01       
++ xi9^xu7^mid_a = 2.118e-04       
++ xi9^xi15^mid_a = 5.734e-01       
++ xi9^xu9^mid_a = 5.782e-01       
++ xi9^xu10^mid_a = 2.388e-04       
++ xi13^xu6^mid_a = 3.573e-01       
++ xi13^xu7^mid_a = 5.782e-01       
++ xi13^xu8^mid_a = 2.387e-04       
++ xi13^xu0^mid_a = 5.734e-01       
++ xclk_gen^xgen^net_2 = 1.807e-05       
++ xclk_gen^xgen^net_3 = 1.807e-05       
++ xclk_gen^xgen^net_4 = 1.000e+00       
++ xa0_gen^xgen^net_2 = 1.503e-02       
++ xa0_gen^xgen^net_3 = 1.503e-02       
++ xa0_gen^xgen^net_4 = 1.000e+00       
++ xa255_gen^xgen^net_2 = 9.888e-01       
++ xa255_gen^xgen^net_3 = 9.888e-01       
++ xa255_gen^xgen^net_4 = 1.000e+00       
++ xclk_gen^xgen^x_0^net_1 = 1.000e-00       
++ xclk_gen^xgen^x_0^net_3 = 1.000e-00       
++ xclk_gen^xgen^x_0^net_4 = 2.038e-05       
++ xa0_gen^xgen^x_0^net_1 = 9.975e-01       
++ xa0_gen^xgen^x_0^net_3 = 9.841e-01       
++ xa0_gen^xgen^x_0^net_4 = 1.036e-03       
++ xa255_gen^xgen^x_0^net_1 = 3.040e-03       
++ xa255_gen^xgen^x_0^net_3 = 2.227e-02       
++ xa255_gen^xgen^x_0^net_4 = 9.968e-01       
++ xclk_gen^xgen^x_0^x_0^vdd_stimulus = 1.000e+00       
++ xclk_gen^xgen^x_0^x_1^vdd_stimulus = 1.000e+00       
++ xclk_gen^xgen^x_0^x_2^vdd_stimulus = 1.000e+00       
++ xclk_gen^xgen^x_0^x_3^vdd_stimulus = 1.000e+00       
++ xa0_gen^xgen^x_0^x_0^vdd_stimulus = 1.000e+00       
++ xa0_gen^xgen^x_0^x_1^vdd_stimulus = 1.000e+00       
++ xa0_gen^xgen^x_0^x_2^vdd_stimulus = 1.000e+00       
++ xa0_gen^xgen^x_0^x_3^vdd_stimulus = 1.000e+00       
++ xa255_gen^xgen^x_0^x_0^vdd_stimulus = 1.000e+00       
++ xa255_gen^xgen^x_0^x_1^vdd_stimulus = 1.000e+00       
++ xa255_gen^xgen^x_0^x_2^vdd_stimulus = 1.000e+00       
++ xa255_gen^xgen^x_0^x_3^vdd_stimulus = 1.000e+00       
+***   END: Saved Operating Point ***                     

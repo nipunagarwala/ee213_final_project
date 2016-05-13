@@ -1,11 +1,9 @@
 ** Generated for: hspiceD
-** Generated on: May  5 19:48:07 2016
+** Generated on: May  6 17:46:52 2016
 ** Design library name: part1
 ** Design cell name: decoder
 ** Design view name: schematic
 .GLOBAL vdd!
-.PARAM pw_inv1 nw_inv1 pw_inv2 nw_inv2 pw_nand2 nw_nand2 pw_inv4 nw_inv4 
-+	pw_inv3 nw_inv3 pw_nand3 nw_nand3 pw_inv5 nw_inv5 pw_nand1 nw_nand1
 
 
 .TEMP 25
@@ -19,12 +17,12 @@
 ** Cell name: nand3
 ** View name: schematic
 .subckt nand3 a b c y
-m10 net9 c 0 0 nmos L=nl W=nw M=nm
-m9 net5 b net9 0 nmos L=nl W=nw M=nm
-m1 y a net5 0 nmos L=nl W=nw M=nm
-m7 y c vdd! vdd! pmos L=pl W=pw M=pm
-m6 y b vdd! vdd! pmos L=pl W=pw M=pm
-m0 y a vdd! vdd! pmos L=pl W=pw M=pm
+m10 net9 c 0 0 nmos L=2 W=nw_nand1 M=1
+m9 net5 b net9 0 nmos L=2 W=nw_nand1 M=1
+m1 y a net5 0 nmos L=2 W=nw_nand1 M=1
+m7 y c vdd! vdd! pmos L=2 W=pw_nand1 M=1
+m6 y b vdd! vdd! pmos L=2 W=pw_nand1 M=1
+m0 y a vdd! vdd! pmos L=2 W=pw_nand1 M=1
 .ends nand3
 ** End of subcircuit definition.
 
@@ -137,7 +135,7 @@ m2 y a 0 0 nmos L=2 W=nw_inv5 M=1
 ** Cell name: decode_stage
 ** View name: schematic
 .subckt decode_stage wl0 wl255 predec predec_255
-xu6 net020 net019 net14 nand_pcell_5
+xu6 0 predec net14 nand_pcell_5
 xu7 vdd! predec_255 net11 nand_pcell_5
 xu8 0 predec_255 net8 nand_pcell_5
 xu0 vdd! predec net17 nand_pcell_5
@@ -151,7 +149,7 @@ xu12 net8 net22 inv_pcell_6
 ** Library name: part1
 ** Cell name: decoder
 ** View name: schematic
-xi4 add0 add255 clk wire_inv1 wire_inv255 predecode_24
-xi9 net027 net028 wire_inv255 wire_inv1 predecode_416
-xi13 wl1_out wl255_out net027 net028 decode_stage
+xi4 add0 add255 clk inv1_wire inv1_255_wire predecode_24
+xi9 inv1_wire inv1_255_wire predec_wire predec_255_wire predecode_416
+xi13 wl0_wire wl255_wire predec_wire predec_255_wire decode_stage
 .END
