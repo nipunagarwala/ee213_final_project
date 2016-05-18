@@ -1,0 +1,4 @@
+m1 y a vdd! vdd! pmos L=2 W=pw_inv1 M=1
+m2 y a 0 0 nmos L=2 W=nw_inv1 M=1
+.ends inv_pcell_0
+** End of subcircuit definition.

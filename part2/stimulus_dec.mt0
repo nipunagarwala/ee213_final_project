@@ -1,0 +1,4 @@
+$DATA1 SOURCE='HSPICE' VERSION='I-2013.12-SP2 64-BIT'
+.TITLE '* file: stimulus.sp'
+ avg_cur          temper           alter#            
+ -6.087e-04         27.0000        1                 

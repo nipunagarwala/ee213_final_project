@@ -1,0 +1,6 @@
+$DATA1 SOURCE='HSPICE' VERSION='I-2013.12-SP2 64-BIT'
+.TITLE '* ee213 project task 3'
+ bl63             bl0              avg_cur          blpc_power        
+ temper           alter#            
+  3.427e-10        3.428e-10       -1.000e-06       -2.072e-03        
+  2.500e+01       1                 

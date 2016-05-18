@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      nipuna1
+HostName                       corn03.stanford.edu
+ProcessIdentifier              5781
+ProcessCreationTime_UTC        1463528038
+ProcessCreationTime_Readable   Tue May 17 16:33:58 2016 PDT
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /afs/ir.stanford.edu/users/n/i/nipuna1/ee213/ee213_final_project/part2/sram_full/schematic/sch.oa.cdslck
+TimeEditLocked                 Tue May 17 16:57:21 2016 PDT

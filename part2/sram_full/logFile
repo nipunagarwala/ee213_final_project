@@ -1,0 +1,80 @@
+header
+"PSFversion" "1.00" 
+"simulator" "HSPICE"
+"version" "I-2013.12-SP2 64-BIT" 
+"rundate" "21:28:30 05/17/2016 " 
+"runtitle" "* ee213 project task 3                                            " 
+"runtype" "logFile"
+TYPE
+"analysisInst" STRUCT(
+"analysisType" STRING *
+"dataFile" STRING *
+"format" STRING *
+"parent" STRING *
+"sweepVariable" ARRAY ( * ) STRING *
+"description" STRING * )
+VALUE
+"element" "analysisInst" ( 
+"Element Information"
+"sram_full_pwr.el0"
+"PSF"
+""
+()
+"Element Information"
+)
+"opBegin" "analysisInst" ( 
+"info"
+"sram_full_pwr.op0"
+"PSF"
+""
+()
+"info"
+)
+"timeSweep" "analysisInst" ( 
+"Transient Analysis"
+"sram_full_pwr.tr0"
+"PSF"
+""
+()
+"Transient Analysis"
+)
+"opEnd" "analysisInst" ( 
+"Operating Point"
+"sram_full_pwr.op0@4.5e-09"
+"PSF"
+""
+()
+"Operating Point"
+)
+"sram_full_pwr.op1" "analysisInst" ( 
+"Operating Point"
+"sram_full_pwr.op1"
+"PSF"
+""
+()
+"Operating Point"
+)
+"timeSweep1" "analysisInst" ( 
+"Transient Analysis"
+"sram_full_pwr.tr1"
+"PSF"
+""
+()
+"Transient Analysis"
+)
+"opEnd" "analysisInst" ( 
+"Operating Point"
+"sram_full_pwr.op1@4.5e-09"
+"PSF"
+""
+()
+"Operating Point"
+)
+"summary" "analysisInst" ( 
+"Summary Information"
+"sram_full_pwr.su0"
+"PSF"
+""
+()
+"Summary Information"
+)

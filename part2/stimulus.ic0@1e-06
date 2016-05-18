@@ -1,0 +1,66 @@
+* "simulator" "HSPICE" 
+* "version" "I-2013.12-SP2 64-BIT"
+* "format" "HSP"
+* "rundate" "18:17:47 05/13/2016 "
+* "netlist" "stimulus.sp "
+* "runtitle" "* file: stimulus.sp"
+* time =  1.000e-06       
+* temperature =  2.500e+01       
+*** BEGIN: Saved Operating Point ***                     
+*.option
+*+ gmindc = 1.000e-12      
+.nodeset
++ add0 = 2.697e-01       
++ add255 = 2.697e-01       
++ clk = 7.600e-01       
++ inv1_255_wire = 2.368e-05       
++ inv1_wire = 2.368e-05       
++ predec_255_wire = 2.020e-05       
++ predec_wire = 2.020e-05       
++ vdd = 1.000e+00       
++ vdd! = 1.000e+00       
++ wl0_wire = 2.063e-05       
++ wl255_wire = 2.063e-05       
++ xi4^nand1 = 9.934e-01       
++ xi4^nand1_1 = 9.934e-01       
++ xi4^net10 = 2.042e-05       
++ xi4^net14 = 1.000e-00       
++ xi4^net22 = 1.000e-00       
++ xi4^net6 = 2.042e-05       
++ xi9^net024 = 2.024e-05       
++ xi9^net028 = 2.024e-05       
++ xi9^net032 = 1.862e-05       
++ xi9^net036 = 1.862e-05       
++ xi9^net043 = 1.000e-00       
++ xi9^net046 = 1.000e-00       
++ xi9^net049 = 1.000e-00       
++ xi9^net052 = 1.000e-00       
++ xi9^net057 = 1.000e-00       
++ xi9^net55 = 1.000e-00       
++ xi9^net63 = 1.000e-00       
++ xi9^net69 = 1.862e-05       
++ xi9^net73 = 1.862e-05       
++ xi9^net77 = 1.000e-00       
++ xi13^net11 = 1.000e-00       
++ xi13^net14 = 1.000e-00       
++ xi13^net17 = 1.000e-00       
++ xi13^net22 = 2.062e-05       
++ xi13^net26 = 2.062e-05       
++ xi13^net8 = 1.000e-00       
++ xi4^xi44^net5 = 5.986e-01       
++ xi4^xi44^net9 = 1.328e-04       
++ xi4^xi45^net5 = 4.093e-01       
++ xi4^xi45^net9 = 4.052e-01       
++ xi4^xi46^net5 = 5.986e-01       
++ xi4^xi46^net9 = 1.328e-04       
++ xi4^xi40^net5 = 4.093e-01       
++ xi4^xi40^net9 = 4.052e-01       
++ xi9^xu7^mid_a = 5.524e-02       
++ xi9^xi15^mid_a = 7.763e-01       
++ xi9^xu9^mid_a = 7.763e-01       
++ xi9^xu10^mid_a = 5.524e-02       
++ xi13^xu6^mid_a = 5.524e-02       
++ xi13^xu7^mid_a = 7.763e-01       
++ xi13^xu8^mid_a = 5.524e-02       
++ xi13^xu0^mid_a = 7.763e-01       
+***   END: Saved Operating Point ***                     

@@ -1,0 +1,33 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  repList "hspiceD spice cmos_sch cmos.sch schematic"
+  stopList "hspiceD spice"
+  hierDelim "^"
+ )
+( net
+( "Address0" "address0" )
+( "Address255" "address255" )
+( "vdd!" "vdd!" )
+( "gnd!" "0" )
+ )
+( inst
+( "I46" "xi46" )
+( "U5" "xu5" )
+( "U6" "xu6" )
+( "U0" "xu0" )
+( "I40" "xi40" )
+( "I44" "xi44" )
+( "I45" "xi45" )
+( "U4" "xu4" )
+ )
+( model
+( "inv_pcell_0" "inv_pcell_0" )
+( "nand3" "nand3" )
+( "predecode_24" "predecode_24" )
+ )
+( term
+ )
+( param
+ )
+ )

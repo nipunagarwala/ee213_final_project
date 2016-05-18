@@ -1,0 +1,5 @@
+
+** Library name: ee213_project_lib
+** Cell name: decode_stage
+** View name: schematic
+.subckt decode_stage wl0 wl255 predec predec_255

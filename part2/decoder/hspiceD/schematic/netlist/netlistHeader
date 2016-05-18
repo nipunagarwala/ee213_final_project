@@ -1,0 +1,6 @@
+** Generated for: hspiceD
+** Generated on: May 13 16:48:37 2016
+** Design library name: part2
+** Design cell name: decoder
+** Design view name: schematic
+.GLOBAL vdd!

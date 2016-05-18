@@ -1,0 +1,72 @@
+***** HSPICE -- I-2013.12-SP2 64-BIT (May 27 2014) RHEL64 ******
+ Input File: task1.sp
+ lic:
+ lic: FLEXlm: v10.9.8
+ lic: USER:   nipuna1              HOSTNAME: corn03.stanford.edu
+ lic: HOSTID: b82a72de68a5         PID:      31190
+ lic: Using FLEXlm license file:
+ lic: 27000@cadlic0.stanford.edu
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 16-oct-2016/2015.06
+ lic: 1(in_use)/150(total) FLOATING license(s) on SERVER 27000@cadlic0.stanford.edu
+ lic:
+ init: begin read circuit files,  cpu clock=  4.80E-01
+       option search = /usr/class/ee/synopsys/hspice/I-2013.12-SP2/hspi
+                         ce/parts/ad
+       option search = /usr/class/ee/synopsys/hspice/I-2013.12-SP2/hspi
+                         ce/parts/ad
+       option search = /usr/class/ee/synopsys/hspice/I-2013.12-SP2/hspi
+                         ce/parts/behave
+       option search = /usr/class/ee/synopsys/hspice/I-2013.12-SP2/hspi
+                         ce/parts/bjt
+       option search = /usr/class/ee/synopsys/hspice/I-2013.12-SP2/hspi
+                         ce/parts/burr_brn
+       option search = /usr/class/ee/synopsys/hspice/I-2013.12-SP2/hspi
+                         ce/parts/comlinear
+       option search = /usr/class/ee/synopsys/hspice/I-2013.12-SP2/hspi
+                         ce/parts/dio
+       option search = /usr/class/ee/synopsys/hspice/I-2013.12-SP2/hspi
+                         ce/parts/fet
+       option search = /usr/class/ee/synopsys/hspice/I-2013.12-SP2/hspi
+                         ce/parts/lin_tech
+       option search = /usr/class/ee/synopsys/hspice/I-2013.12-SP2/hspi
+                         ce/parts/pci
+       option search = /usr/class/ee/synopsys/hspice/I-2013.12-SP2/hspi
+                         ce/parts/signet
+       option search = /usr/class/ee/synopsys/hspice/I-2013.12-SP2/hspi
+                         ce/parts/ti
+       option search = /usr/class/ee/synopsys/hspice/I-2013.12-SP2/hspi
+                         ce/parts/tline
+       option search = /usr/class/ee/synopsys/hspice/I-2013.12-SP2/hspi
+                         ce/parts/xilinx
+       option runlvl
+       option scale =    2.200E-08
+       option accurate
+       option post
+       option dcic =     0.00
+       option parhier = local
+       option list
+ init: end read circuit files,  cpu clock=  4.80E-01 peak memory=       179 mb
+ init: begin check errors,  cpu clock=  4.80E-01
+ init: end check errors,  cpu clock=  5.00E-01 peak memory=       181 mb
+ init: begin setup matrix, pivot=     0 cpu clock=  5.00E-01
+       establish matrix -- done,  cpu clock=  5.00E-01 peak memory=       181 mb
+       re-order matrix -- done,  cpu clock=  5.00E-01 peak memory=       182 mb
+ init: end setup matrix,  cpu clock=  5.00E-01 peak memory=       182 mb
+ dcop: begin dcop,  cpu clock=  5.10E-01
+ dcop: end dcop,  cpu clock=  5.90E-01 peak memory=       182 mb  tot_iter=     235
+ output: task1.mt0
+ sweep: tran tran0    begin, stop_t=  4.50E-09 #sweeps= 901 cpu clock=  5.90E-01
+ tran: time= 4.5032E-10 tot_iter=     140 conv_iter=      39 cpu clock= 6.10E-01
+ tran: time= 9.4425E-10 tot_iter=     668 conv_iter=     171 cpu clock= 6.90E-01
+ tran: time= 1.3750E-09 tot_iter=    1104 conv_iter=     277 cpu clock= 7.50E-01
+ tran: time= 1.8020E-09 tot_iter=    1767 conv_iter=     443 cpu clock= 8.50E-01
+ tran: time= 2.2546E-09 tot_iter=    2193 conv_iter=     545 cpu clock= 9.20E-01
+ tran: time= 2.7017E-09 tot_iter=    2751 conv_iter=     688 cpu clock= 1.01E+00
+ tran: time= 3.1523E-09 tot_iter=    3133 conv_iter=     781 cpu clock= 1.06E+00
+ tran: time= 3.6023E-09 tot_iter=    3710 conv_iter=     925 cpu clock= 1.15E+00
+ tran: time= 4.0516E-09 tot_iter=    4028 conv_iter=    1009 cpu clock= 1.20E+00
+ tran: time= 4.5000E-09 tot_iter=    4613 conv_iter=    1153 cpu clock= 1.29E+00
+ sweep: tran tran0    end,  cpu clock=  1.29E+00 peak memory=       182 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

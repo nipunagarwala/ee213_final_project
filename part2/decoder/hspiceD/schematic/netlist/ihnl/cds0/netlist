@@ -1,0 +1,8 @@
+m12 net5 b net9 0 nmos L=2 W=nw_nand1 M=1
+m13 net9 c 0 0 nmos L=2 W=nw_nand1 M=1
+m1 y a net5 0 nmos L=2 W=nw_nand1 M=1
+m7 y c vdd! vdd! pmos L=2 W=pw_nand1 M=1
+m11 y a vdd! vdd! pmos L=2 W=pw_nand1 M=1
+m8 y b vdd! vdd! pmos L=2 W=pw_nand1 M=1
+.ends nand3
+** End of subcircuit definition.

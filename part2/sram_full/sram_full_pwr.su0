@@ -1,0 +1,19 @@
+header
+"PSFversion" "1.00" 
+"simulator" "HSPICE"
+"version" "I-2013.12-SP2 64-BIT" 
+"rundate" "21:28:30 05/17/2016 " 
+"runtitle" "* ee213 project task 3                                            " 
+"runtype" "Summary Information"
+"op point time" "      0.10"  
+"op point iterations" "       
+"transient time" "      5.25"      
+"transient time" "      5.25"      
+"total cpu time" "        5.42"    
+"node value" "complete"
+"operating point" "invalid"
+"ac analysis" "invalid"
+"dc sweep" "invalid"
+"transient analysis" "complete"
+trailer
+end

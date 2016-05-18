@@ -1,0 +1,6 @@
+$DATA1 SOURCE='HSPICE' VERSION='I-2013.12-SP2 64-BIT'
+.TITLE '* file: task2.sp'
+ tdly             avg_cur          sae_cur          sapc_power        
+ temper           alter#            
+  4.345e-11       -1.221e-05       -2.201e-06       -1.894e-06        
+   27.0000        1                 

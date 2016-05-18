@@ -1,0 +1,48 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "decoder"
+  repList "hspiceD spice cmos_sch cmos.sch schematic"
+  stopList "hspiceD spice"
+  globalList "vdd! gnd!"
+  hierDelim "^"
+  netlistDir "/afs/ir.stanford.edu/users/n/i/nipuna1/ee213/ee213_final_project/part2/decoder/hspiceD/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "ee213_project_lib/decode_stage/schematic" "decode_stage" )
+( "ee213_project_lib/predecode_24/schematic" "predecode_24" )
+( "ee313/inv_pcell_3/schematic" "inv_pcell_3" )
+( "ee213_project_lib/nand3/schematic" "nand3" )
+( "ee313/inv_pcell_1/schematic" "inv_pcell_1" )
+( "ee313/nand_pcell_2/schematic" "nand_pcell_2" )
+( "ee313/inv_pcell_6/schematic" "inv_pcell_6" )
+( "ee313/inv_pcell_4/schematic" "inv_pcell_4" )
+( "ee213_project_lib/predecode_416/schematic" "predecode_416" )
+( "ee313/nand_pcell_5/schematic" "nand_pcell_5" )
+( "part2/decoder/schematic" "decoder_schematic" )
+( "ee313/inv_pcell_0/schematic" "inv_pcell_0" )
+ )
+( term
+ )
+( param
+ )
+( "decode_stage" "ihnl/cds10/map" )
+( "inv_pcell_0" "ihnl/cds1/map" )
+( "inv_pcell_3" "ihnl/cds5/map" )
+( "nand3" "ihnl/cds0/map" )
+( "inv_pcell_1" "ihnl/cds3/map" )
+( "decoder_schematic" "ihnl/cds12/map" )
+( "nand_pcell_2" "ihnl/cds4/map" )
+( "inv_pcell_4" "ihnl/cds6/map" )
+( "predecode_24" "ihnl/cds2/map" )
+( "predecode_416" "ihnl/cds7/map" )
+( "inv_pcell_6" "ihnl/cds9/map" )
+( "nand_pcell_5" "ihnl/cds8/map" )
+ )

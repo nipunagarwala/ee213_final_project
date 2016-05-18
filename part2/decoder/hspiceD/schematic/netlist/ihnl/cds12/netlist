@@ -1,0 +1,9 @@
+
+** Library name: part2
+** Cell name: decoder
+** View name: schematic
+xi4 add0 add255 clk inv1_wire inv1_255_wire predecode_24
+xi9 inv1_wire inv1_255_wire predec_wire predec_255_wire predecode_416
+xi13 wl0_wire wl255_wire predec_wire predec_255_wire decode_stage
+c1 wl255_wire 0 121.64e-15
+c0 wl0_wire 0 121.64e-15

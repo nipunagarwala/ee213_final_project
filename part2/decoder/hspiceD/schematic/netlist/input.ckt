@@ -1,0 +1,157 @@
+** Generated for: hspiceD
+** Generated on: May 13 16:48:37 2016
+** Design library name: part2
+** Design cell name: decoder
+** Design view name: schematic
+.GLOBAL vdd!
+
+
+.TEMP 25
+.OPTION
++    ARTIST=2
++    INGOLD=2
++    PARHIER=LOCAL
++    PSF=2
+
+** Library name: ee213_project_lib
+** Cell name: nand3
+** View name: schematic
+.subckt nand3 a b c y
+m12 net5 b net9 0 nmos L=2 W=nw_nand1 M=1
+m13 net9 c 0 0 nmos L=2 W=nw_nand1 M=1
+m1 y a net5 0 nmos L=2 W=nw_nand1 M=1
+m7 y c vdd! vdd! pmos L=2 W=pw_nand1 M=1
+m11 y a vdd! vdd! pmos L=2 W=pw_nand1 M=1
+m8 y b vdd! vdd! pmos L=2 W=pw_nand1 M=1
+.ends nand3
+** End of subcircuit definition.
+
+** Library name: ee313
+** Cell name: inv
+** View name: schematic
+.subckt inv_pcell_0 a y
+m1 y a vdd! vdd! pmos L=2 W=pw_inv1 M=1
+m2 y a 0 0 nmos L=2 W=nw_inv1 M=1
+.ends inv_pcell_0
+** End of subcircuit definition.
+
+** Library name: ee213_project_lib
+** Cell name: predecode_24
+** View name: schematic
+.subckt predecode_24 address0 address255 ck inv1 inv1_255
+xi44 ck 0 address0 net22 nand3
+xi45 ck vdd! address255 nand1_1 nand3
+xi46 ck 0 address255 net14 nand3
+xi40 ck vdd! address0 nand1 nand3
+xu4 net22 net10 inv_pcell_0
+xu5 nand1_1 inv1_255 inv_pcell_0
+xu6 net14 net6 inv_pcell_0
+xu0 nand1 inv1 inv_pcell_0
+.ends predecode_24
+** End of subcircuit definition.
+
+** Library name: ee313
+** Cell name: inv
+** View name: schematic
+.subckt inv_pcell_1 a y
+m1 y a vdd! vdd! pmos L=2 W=pw_inv2 M=1
+m2 y a 0 0 nmos L=2 W=nw_inv2 M=1
+.ends inv_pcell_1
+** End of subcircuit definition.
+
+** Library name: ee313
+** Cell name: nand
+** View name: schematic
+.subckt nand_pcell_2 a b y
+m2 y b vdd! vdd! pmos L=2 W=pw_nand2 M=1
+m0 y a vdd! vdd! pmos L=2 W=pw_nand2 M=1
+m3 mid_a b 0 0 nmos L=2 W=nw_nand2 M=1
+m1 y a mid_a 0 nmos L=2 W=nw_nand2 M=1
+.ends nand_pcell_2
+** End of subcircuit definition.
+
+** Library name: ee313
+** Cell name: inv
+** View name: schematic
+.subckt inv_pcell_3 a y
+m1 y a vdd! vdd! pmos L=2 W=pw_inv4 M=1
+m2 y a 0 0 nmos L=2 W=nw_inv4 M=1
+.ends inv_pcell_3
+** End of subcircuit definition.
+
+** Library name: ee313
+** Cell name: inv
+** View name: schematic
+.subckt inv_pcell_4 a y
+m1 y a vdd! vdd! pmos L=2 W=pw_inv3 M=1
+m2 y a 0 0 nmos L=2 W=nw_inv3 M=1
+.ends inv_pcell_4
+** End of subcircuit definition.
+
+** Library name: ee213_project_lib
+** Cell name: predecode_416
+** View name: schematic
+.subckt predecode_416 inv1 inv1_255 predec predec_255
+xu0 net77 net032 inv_pcell_1
+xu25 net55 net69 inv_pcell_1
+xu26 net057 net036 inv_pcell_1
+xu27 net63 net73 inv_pcell_1
+xu7 0 inv1 net55 nand_pcell_2
+xi15 vdd! inv1 net77 nand_pcell_2
+xu9 vdd! inv1_255 net057 nand_pcell_2
+xu10 0 inv1_255 net63 nand_pcell_2
+xu31 net049 net028 inv_pcell_3
+xu33 net043 net024 inv_pcell_3
+xu32 net052 predec_255 inv_pcell_3
+xu8 net046 predec inv_pcell_3
+xu15 net032 net046 inv_pcell_4
+xu28 net69 net049 inv_pcell_4
+xu29 net036 net052 inv_pcell_4
+xu30 net73 net043 inv_pcell_4
+.ends predecode_416
+** End of subcircuit definition.
+
+** Library name: ee313
+** Cell name: nand
+** View name: schematic
+.subckt nand_pcell_5 a b y
+m2 y b vdd! vdd! pmos L=2 W=pw_nand3 M=1
+m0 y a vdd! vdd! pmos L=2 W=pw_nand3 M=1
+m3 mid_a b 0 0 nmos L=2 W=nw_nand3 M=1
+m1 y a mid_a 0 nmos L=2 W=nw_nand3 M=1
+.ends nand_pcell_5
+** End of subcircuit definition.
+
+** Library name: ee313
+** Cell name: inv
+** View name: schematic
+.subckt inv_pcell_6 a y
+m1 y a vdd! vdd! pmos L=2 W=pw_inv5 M=1
+m2 y a 0 0 nmos L=2 W=nw_inv5 M=1
+.ends inv_pcell_6
+** End of subcircuit definition.
+
+** Library name: ee213_project_lib
+** Cell name: decode_stage
+** View name: schematic
+.subckt decode_stage wl0 wl255 predec predec_255
+xu6 0 predec net14 nand_pcell_5
+xu7 vdd! predec_255 net11 nand_pcell_5
+xu8 0 predec_255 net8 nand_pcell_5
+xu0 vdd! predec net17 nand_pcell_5
+xu5 net17 wl0 inv_pcell_6
+xu10 net14 net26 inv_pcell_6
+xu11 net11 wl255 inv_pcell_6
+xu12 net8 net22 inv_pcell_6
+.ends decode_stage
+** End of subcircuit definition.
+
+** Library name: part2
+** Cell name: decoder
+** View name: schematic
+xi4 add0 add255 clk inv1_wire inv1_255_wire predecode_24
+xi9 inv1_wire inv1_255_wire predec_wire predec_255_wire predecode_416
+xi13 wl0_wire wl255_wire predec_wire predec_255_wire decode_stage
+c1 wl255_wire 0 121.64e-15
+c0 wl0_wire 0 121.64e-15
+.END

@@ -1,0 +1,80 @@
+header
+"PSFversion" "1.00" 
+"simulator" "HSPICE"
+"version" "I-2013.12-SP2 64-BIT" 
+"rundate" "16:26:12 05/16/2016 " 
+"runtitle" "* file: stimulus.sp                                               " 
+"runtype" "logFile"
+TYPE
+"analysisInst" STRUCT(
+"analysisType" STRING *
+"dataFile" STRING *
+"format" STRING *
+"parent" STRING *
+"sweepVariable" ARRAY ( * ) STRING *
+"description" STRING * )
+VALUE
+"element" "analysisInst" ( 
+"Element Information"
+"stimulus.el0"
+"PSF"
+""
+()
+"Element Information"
+)
+"opBegin" "analysisInst" ( 
+"info"
+"stimulus.op0"
+"PSF"
+""
+()
+"info"
+)
+"timeSweep" "analysisInst" ( 
+"Transient Analysis"
+"stimulus.tr0"
+"PSF"
+""
+()
+"Transient Analysis"
+)
+"opEnd" "analysisInst" ( 
+"Operating Point"
+"stimulus.op0@1e-08"
+"PSF"
+""
+()
+"Operating Point"
+)
+"stimulus.op1" "analysisInst" ( 
+"Operating Point"
+"stimulus.op1"
+"PSF"
+""
+()
+"Operating Point"
+)
+"timeSweep1" "analysisInst" ( 
+"Transient Analysis"
+"stimulus.tr1"
+"PSF"
+""
+()
+"Transient Analysis"
+)
+"opEnd" "analysisInst" ( 
+"Operating Point"
+"stimulus.op1@1e-08"
+"PSF"
+""
+()
+"Operating Point"
+)
+"summary" "analysisInst" ( 
+"Summary Information"
+"stimulus.su0"
+"PSF"
+""
+()
+"Summary Information"
+)

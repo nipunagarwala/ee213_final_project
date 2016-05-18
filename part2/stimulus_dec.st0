@@ -1,0 +1,73 @@
+***** HSPICE -- I-2013.12-SP2 64-BIT (May 27 2014) RHEL64 ******
+ Input File: stimulus_dec.sp
+ lic:
+ lic: FLEXlm: v10.9.8
+ lic: USER:   nipuna1              HOSTNAME: corn03.stanford.edu
+ lic: HOSTID: b82a72de68a5         PID:      42064
+ lic: Using FLEXlm license file:
+ lic: 27000@cadlic0.stanford.edu
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 16-oct-2016/2015.06
+ lic: 2(in_use)/150(total) FLOATING license(s) on SERVER 27000@cadlic0.stanford.edu
+ lic:
+ init: begin read circuit files,  cpu clock=  4.90E-01
+       option search = /usr/class/ee/synopsys/hspice/I-2013.12-SP2/hspi
+                         ce/parts/ad
+       option search = /usr/class/ee/synopsys/hspice/I-2013.12-SP2/hspi
+                         ce/parts/ad
+       option search = /usr/class/ee/synopsys/hspice/I-2013.12-SP2/hspi
+                         ce/parts/behave
+       option search = /usr/class/ee/synopsys/hspice/I-2013.12-SP2/hspi
+                         ce/parts/bjt
+       option search = /usr/class/ee/synopsys/hspice/I-2013.12-SP2/hspi
+                         ce/parts/burr_brn
+       option search = /usr/class/ee/synopsys/hspice/I-2013.12-SP2/hspi
+                         ce/parts/comlinear
+       option search = /usr/class/ee/synopsys/hspice/I-2013.12-SP2/hspi
+                         ce/parts/dio
+       option search = /usr/class/ee/synopsys/hspice/I-2013.12-SP2/hspi
+                         ce/parts/fet
+       option search = /usr/class/ee/synopsys/hspice/I-2013.12-SP2/hspi
+                         ce/parts/lin_tech
+       option search = /usr/class/ee/synopsys/hspice/I-2013.12-SP2/hspi
+                         ce/parts/pci
+       option search = /usr/class/ee/synopsys/hspice/I-2013.12-SP2/hspi
+                         ce/parts/signet
+       option search = /usr/class/ee/synopsys/hspice/I-2013.12-SP2/hspi
+                         ce/parts/ti
+       option search = /usr/class/ee/synopsys/hspice/I-2013.12-SP2/hspi
+                         ce/parts/tline
+       option search = /usr/class/ee/synopsys/hspice/I-2013.12-SP2/hspi
+                         ce/parts/xilinx
+       option runlvl
+       option scale =    2.200E-08
+       option accurate
+       option post
+       option dcic =     0.00
+       option parhier = local
+       option list
+ init: end read circuit files,  cpu clock=  4.90E-01 peak memory=       179 mb
+ init: begin check errors,  cpu clock=  4.90E-01
+ **warning**  No DC path to ground from node        0:                ck
+ init: end check errors,  cpu clock=  5.00E-01 peak memory=       181 mb
+ init: begin setup matrix, pivot=     0 cpu clock=  5.00E-01
+       establish matrix -- done,  cpu clock=  5.10E-01 peak memory=       181 mb
+       re-order matrix -- done,  cpu clock=  5.10E-01 peak memory=       181 mb
+ init: end setup matrix,  cpu clock=  5.10E-01 peak memory=       181 mb
+ dcop: begin dcop,  cpu clock=  5.10E-01
+ dcop: end dcop,  cpu clock=  5.70E-01 peak memory=       182 mb  tot_iter=     167
+ output: stimulus_dec.mt0
+ sweep: tran tran0    begin, stop_t=  1.00E-08 #sweeps=**** cpu clock=  5.80E-01
+ tran: time= 1.0000E-09 tot_iter=     646 conv_iter=     152 cpu clock= 6.60E-01
+ tran: time= 2.0000E-09 tot_iter=    1587 conv_iter=     385 cpu clock= 8.00E-01
+ tran: time= 3.0000E-09 tot_iter=    2442 conv_iter=     606 cpu clock= 9.30E-01
+ tran: time= 4.0000E-09 tot_iter=    3363 conv_iter=     840 cpu clock= 1.07E+00
+ tran: time= 5.0000E-09 tot_iter=    4288 conv_iter=    1075 cpu clock= 1.22E+00
+ tran: time= 6.0000E-09 tot_iter=    5166 conv_iter=    1300 cpu clock= 1.34E+00
+ tran: time= 7.0000E-09 tot_iter=    6070 conv_iter=    1528 cpu clock= 1.48E+00
+ tran: time= 8.0250E-09 tot_iter=    6962 conv_iter=    1757 cpu clock= 1.62E+00
+ tran: time= 9.0000E-09 tot_iter=    7916 conv_iter=    1994 cpu clock= 1.77E+00
+ tran: time= 1.0000E-08 tot_iter=    8766 conv_iter=    2215 cpu clock= 1.90E+00
+ sweep: tran tran0    end,  cpu clock=  1.90E+00 peak memory=       182 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)
