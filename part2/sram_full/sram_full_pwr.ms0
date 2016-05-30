@@ -1,4 +1,4 @@
 $DATA1 SOURCE='HSPICE' VERSION='I-2013.12-SP2 64-BIT'
 .TITLE '* ee213 project task 3'
  idsat            temper           alter#            
-  2.610e-07        2.500e+01       1                 
+ -5.475e-07        2.700e+01       1                 

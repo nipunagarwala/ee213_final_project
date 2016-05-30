@@ -2,5 +2,5 @@ $DATA1 SOURCE='HSPICE' VERSION='I-2013.12-SP2 64-BIT'
 .TITLE '* file: task1.sp'
  tdr              tdf              avg_cur          ck_power          
  temper           alter#            
-  1.747e-10        1.623e-10       -2.938e-04       -5.956e-06        
+  3.921e-10        3.552e-10       -1.357e-04       -6.306e-06        
    27.0000        1                 

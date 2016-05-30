@@ -4,6 +4,9 @@
 ** Design cell name: decoder
 ** Design view name: schematic
 .GLOBAL vdd!
+.GLOBAL vdd_pre1
+.GLOBAL vdd_pre2
+.GLOBAL vdd_dec
 
 
 .TEMP 25
@@ -115,8 +118,8 @@ xu30 net73 net043 inv_pcell_4
 ** Cell name: nand
 ** View name: schematic
 .subckt nand_pcell_5 a b y
-m2 y b vdd! vdd! pmos L=2 W=pw_nand3 M=1
-m0 y a vdd! vdd! pmos L=2 W=pw_nand3 M=1
+m2 y b vdd_dec vdd_dec pmos L=2 W=pw_nand3 M=1
+m0 y a vdd_dec vdd_dec pmos L=2 W=pw_nand3 M=1
 m3 mid_a b 0 0 nmos L=2 W=nw_nand3 M=1
 m1 y a mid_a 0 nmos L=2 W=nw_nand3 M=1
 .ends nand_pcell_5
@@ -126,7 +129,7 @@ m1 y a mid_a 0 nmos L=2 W=nw_nand3 M=1
 ** Cell name: inv
 ** View name: schematic
 .subckt inv_pcell_6 a y
-m1 y a vdd! vdd! pmos L=2 W=pw_inv5 M=1
+m1 y a vdd_dec vdd_dec pmos L=2 W=pw_inv5 M=1
 m2 y a 0 0 nmos L=2 W=nw_inv5 M=1
 .ends inv_pcell_6
 ** End of subcircuit definition.
@@ -136,9 +139,9 @@ m2 y a 0 0 nmos L=2 W=nw_inv5 M=1
 ** View name: schematic
 .subckt decode_stage wl0 wl255 predec predec_255
 xu6 0 predec net14 nand_pcell_5
-xu7 vdd! predec_255 net11 nand_pcell_5
+xu7 vdd_dec predec_255 net11 nand_pcell_5
 xu8 0 predec_255 net8 nand_pcell_5
-xu0 vdd! predec net17 nand_pcell_5
+xu0 vdd_dec predec net17 nand_pcell_5
 xu5 net17 wl0 inv_pcell_6
 xu10 net14 net26 inv_pcell_6
 xu11 net11 wl255 inv_pcell_6
@@ -152,4 +155,7 @@ xu12 net8 net22 inv_pcell_6
 xi4 add0 add255 clk inv1_wire inv1_255_wire predecode_24
 xi9 inv1_wire inv1_255_wire predec_wire predec_255_wire predecode_416
 xi13 wl0_wire wl255_wire predec_wire predec_255_wire decode_stage
+c1 predec_255_wire 0 18e-15
+c0 predec_wire 0 18e-15
+
 .END

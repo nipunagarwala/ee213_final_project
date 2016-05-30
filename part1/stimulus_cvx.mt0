@@ -1,0 +1,12 @@
+$DATA1 SOURCE='HSPICE' VERSION='I-2013.12-SP2 64-BIT'
+.TITLE '* file: stimulus.sp'
+ wl0r             wl0f             pdec24r          pdec24f           
+ pdec416r         pdec416f         decr             decf              
+ wl0risetime      wl0falltime      pdec24risetime   pdec24falltime    
+ pdec416risetime  pdec416falltime  avg_cur_tot      avg_cur_pre1      
+ avg_cur_pre2     avg_cur_dec      temper           alter#            
+  1.668e-10        2.003e-10        2.545e-11        2.671e-11        
+  5.911e-11        6.848e-11        8.223e-11        1.051e-10        
+  1.668e-10        2.003e-10        2.545e-11        2.671e-11        
+  5.911e-11        6.848e-11       -5.322e-05       -1.000e-06        
+ -1.000e-06       -1.576e-04        2.500e+01       1                 

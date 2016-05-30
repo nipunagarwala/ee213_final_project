@@ -2,7 +2,7 @@ header
 "PSFversion" "1.00" 
 "simulator" "HSPICE"
 "version" "I-2013.12-SP2 64-BIT" 
-"rundate" "21:28:30 05/17/2016 " 
+"rundate" "23:32:08 05/17/2016 " 
 "runtitle" "* ee213 project task 3                                            " 
 "runtype" "logFile"
 TYPE

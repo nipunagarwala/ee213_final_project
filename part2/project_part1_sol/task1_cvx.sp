@@ -7,7 +7,7 @@
 .param tcyc = 1ns
 .param trf = 50ps
 
-.include './project.dec_stage.ckt'
+.include './project.decoder_cvx.ckt'
 .include 'stimulus.sp'
 .include '../../ee213_mod_header.h'
 * wordline loading
@@ -27,7 +27,7 @@ Cwl255 wl255 gnd 121.65fF
 + TRIG v(ck)  VAL='supply/2' fall=1
 + TARG v(wl0) VAL='supply/2' fall=1
 
-.measure avg_cur AVG i(v_supply2) FROM=1n TO=2n
+.measure avg_cur AVG i(v_supply1) FROM=2n TO=3n
 .meas TRAN ck_power
 + AVG i(Xclk_gen.Xgen.V_monitor) FROM='2*tcyc' TO='3*tcyc'
 

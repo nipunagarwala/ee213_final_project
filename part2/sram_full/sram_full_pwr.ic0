@@ -1,7 +1,7 @@
 * "simulator" "HSPICE" 
 * "version" "I-2013.12-SP2 64-BIT"
 * "format" "HSP"
-* "rundate" "21:28:30 05/17/2016 "
+* "rundate" "23:32:08 05/17/2016 "
 * "netlist" "sram_full_pwr.sp "
 * "runtitle" "* ee213 project task 3"
 * time =  0.000e+00       
@@ -12,9 +12,9 @@
 .nodeset
 + a0 = 1.892e-05       
 + a255 = 1.892e-05       
-+ bl0 = 9.999e-01       
++ bl0 = 1.000e+00       
 + bl63 = 9.999e-01       
-+ bl_b0 = 9.997e-01       
++ bl_b0 = 1.000e+00       
 + bl_b63 = 9.997e-01       
 + blpc_b = 1.892e-05       
 + ck = 1.892e-05       
@@ -27,7 +27,7 @@
 + vdd = 1.000e+00       
 + vdd! = 1.000e+00       
 + vdd_dec = 1.000e+00       
-+ wl0 = 1.671e-05       
++ wl0 = 1.670e-05       
 + wl255 = 1.671e-05       
 + wrdata0 = 0.000e+00       
 + wrdata255 = 0.000e+00       
@@ -69,12 +69,12 @@
 + xdm^net26 = 9.999e-01       
 + xd0^net18 = 9.999e-01       
 + xd0^net23 = 9.999e-01       
-+ xd0^net26 = 4.573e-05       
++ xd0^net26 = 4.574e-05       
 + xbr^bit = 1.000e-00       
 + xbr^bit_b = 6.250e-11       
 + xbm^bit = 1.000e-00       
 + xbm^bit_b = 1.585e-08       
-+ xbl^bit = 6.251e-11       
++ xbl^bit = 6.252e-11       
 + xbl^bit_b = 1.000e-00       
 + xml^bit = 1.000e-00       
 + xml^bit_b = 1.585e-08       
@@ -87,7 +87,7 @@
 + xtm^bit = 1.000e-00       
 + xtm^bit_b = 1.585e-08       
 + xtl^bit = 1.000e-00       
-+ xtl^bit_b = 6.250e-11       
++ xtl^bit_b = 1.000e-00       
 + xblpc_gen^src = 0.000e+00       
 + xi1^xi4^mid_a = 7.762e-01       
 + xi1^xi6^mid_a = 7.762e-01       
