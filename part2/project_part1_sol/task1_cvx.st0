@@ -3,14 +3,14 @@
  lic:
  lic: FLEXlm: v10.9.8
  lic: USER:   nipuna1              HOSTNAME: corn03.stanford.edu
- lic: HOSTID: b82a72de68a5         PID:      33277
+ lic: HOSTID: b82a72de68a5         PID:      42455
  lic: Using FLEXlm license file:
  lic: 27000@cadlic0.stanford.edu
  lic: Checkout 1 hspice
  lic: License/Maintenance for hspice will expire on 16-oct-2016/2015.06
  lic: 1(in_use)/150(total) FLOATING license(s) on SERVER 27000@cadlic0.stanford.edu
  lic:
- init: begin read circuit files,  cpu clock=  9.30E-01
+ init: begin read circuit files,  cpu clock=  4.70E-01
        option search = /usr/class/ee/synopsys/hspice/I-2013.12-SP2/hspi
                          ce/parts/ad
        option search = /usr/class/ee/synopsys/hspice/I-2013.12-SP2/hspi
@@ -46,27 +46,27 @@
        option dcic =     0.00
        option parhier = local
        option list
- init: end read circuit files,  cpu clock=  9.40E-01 peak memory=       179 mb
- init: begin check errors,  cpu clock=  9.40E-01
- init: end check errors,  cpu clock=  9.80E-01 peak memory=       181 mb
- init: begin setup matrix, pivot=     0 cpu clock=  9.80E-01
-       establish matrix -- done,  cpu clock=  9.80E-01 peak memory=       181 mb
-       re-order matrix -- done,  cpu clock=  9.80E-01 peak memory=       182 mb
- init: end setup matrix,  cpu clock=  9.80E-01 peak memory=       182 mb
- dcop: begin dcop,  cpu clock=  9.80E-01
- dcop: end dcop,  cpu clock=  1.06E+00 peak memory=       182 mb  tot_iter=     127
+ init: end read circuit files,  cpu clock=  4.70E-01 peak memory=       179 mb
+ init: begin check errors,  cpu clock=  4.70E-01
+ init: end check errors,  cpu clock=  4.90E-01 peak memory=       181 mb
+ init: begin setup matrix, pivot=     0 cpu clock=  4.90E-01
+       establish matrix -- done,  cpu clock=  4.90E-01 peak memory=       181 mb
+       re-order matrix -- done,  cpu clock=  4.90E-01 peak memory=       182 mb
+ init: end setup matrix,  cpu clock=  4.90E-01 peak memory=       182 mb
+ dcop: begin dcop,  cpu clock=  4.90E-01
+ dcop: end dcop,  cpu clock=  5.40E-01 peak memory=       182 mb  tot_iter=     117
  output: task1_cvx.mt0
- sweep: tran tran0    begin, stop_t=  4.50E-09 #sweeps= 901 cpu clock=  1.06E+00
- tran: time= 4.5079E-10 tot_iter=     143 conv_iter=      39 cpu clock= 1.08E+00
- tran: time= 9.0050E-10 tot_iter=     630 conv_iter=     159 cpu clock= 1.20E+00
- tran: time= 1.3521E-09 tot_iter=    1065 conv_iter=     258 cpu clock= 1.29E+00
- tran: time= 1.8028E-09 tot_iter=    1686 conv_iter=     405 cpu clock= 1.44E+00
- tran: time= 2.2576E-09 tot_iter=    2103 conv_iter=     505 cpu clock= 1.53E+00
- tran: time= 2.7008E-09 tot_iter=    2734 conv_iter=     654 cpu clock= 1.68E+00
- tran: time= 3.1517E-09 tot_iter=    3165 conv_iter=     755 cpu clock= 1.77E+00
- tran: time= 3.6011E-09 tot_iter=    3728 conv_iter=     887 cpu clock= 1.90E+00
- tran: time= 4.0520E-09 tot_iter=    4047 conv_iter=     969 cpu clock= 1.96E+00
- tran: time= 4.5000E-09 tot_iter=    4683 conv_iter=    1112 cpu clock= 2.09E+00
- sweep: tran tran0    end,  cpu clock=  2.09E+00 peak memory=       182 mb
+ sweep: tran tran0    begin, stop_t=  4.50E-09 #sweeps= 901 cpu clock=  5.40E-01
+ tran: time= 4.5079E-10 tot_iter=     143 conv_iter=      39 cpu clock= 5.60E-01
+ tran: time= 9.1479E-10 tot_iter=     606 conv_iter=     158 cpu clock= 6.30E-01
+ tran: time= 1.3603E-09 tot_iter=    1061 conv_iter=     264 cpu clock= 6.90E-01
+ tran: time= 1.8066E-09 tot_iter=    1686 conv_iter=     408 cpu clock= 8.00E-01
+ tran: time= 2.2551E-09 tot_iter=    2133 conv_iter=     512 cpu clock= 8.80E-01
+ tran: time= 2.7006E-09 tot_iter=    2841 conv_iter=     676 cpu clock= 1.01E+00
+ tran: time= 3.1517E-09 tot_iter=    3264 conv_iter=     775 cpu clock= 1.08E+00
+ tran: time= 3.6012E-09 tot_iter=    3891 conv_iter=     918 cpu clock= 1.18E+00
+ tran: time= 4.0521E-09 tot_iter=    4179 conv_iter=     993 cpu clock= 1.24E+00
+ tran: time= 4.5000E-09 tot_iter=    4810 conv_iter=    1138 cpu clock= 1.33E+00
+ sweep: tran tran0    end,  cpu clock=  1.33E+00 peak memory=       182 mb
 >info:         ***** hspice job concluded
  lic: Release hspice token(s)
